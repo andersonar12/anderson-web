@@ -1,0 +1,20 @@
+<div class="row d-flex justify-content-center">
+
+  <div class="col-md-2 p-0 m-2 card-col" *ngFor="let skill of skills"> 
+    <div class="card hvr-shutter-in-vertical" >
+      <img class="card-img-top" class="img-fluid" src="{{skill.img}}" alt="Card image cap">
+      <div class="card-body">
+        <h3 class="card-title text-center"> <strong>{{skill.title}}</strong> </h3>
+        
+      </div>
+      <div class="p-2">
+      <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" 
+            role="progressbar" attr.aria-valuenow="{{skill.porc}}" aria-valuemin="0" 
+            aria-valuemax="100" [style.width]="skill.porc+'%'">{{skill.porc}}%</div>
+          </div>
+      </div>
+    </div>
+    </div>
+    
+</div>

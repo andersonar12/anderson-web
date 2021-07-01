@@ -1,0 +1,22 @@
+.navbar-light .navbar-toggler {
+    color: rgb(49 13 13);
+    border-color:  #006fdd!important;
+}
+
+@media (max-width: 991px){
+    .header ul li a{
+        text-align: center!important;
+    }
+    }
+
+nav{
+    border-bottom: 3px solid  #006fdd;
+}
+
+nav a i{
+    font-size: 20px!important;
+}
+
+.btn-primary{
+    border-radius: 40px;
+}

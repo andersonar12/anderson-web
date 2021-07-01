@@ -1,0 +1,23 @@
+h3{
+    font-size: 40px;
+}
+
+p{
+    font-size: 20px;
+}
+
+.github{
+    border-radius: 75px;
+    box-shadow: 4px 5px 12px 1px #000000;
+}
+
+.github:hover{
+    cursor: pointer;
+}
+
+
+.card {
+    border: 3px solid rgb(0 110 221);
+    border-radius: 0.75rem;
+    box-shadow: 4px 5px 12px 1px #000000;
+}

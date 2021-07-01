@@ -1,0 +1,77 @@
+<header class="header bg-light">
+  <div class="container-fluid">
+    <nav
+      class="
+        navbar
+        fixed-top
+        navbar-expand-lg navbar-light
+        bg-light
+        d-flex
+        justify-content-around
+        pt-1
+        pb-1
+      "
+    >
+      <a class="navbar-brand" [routerLink]="['home']"
+        ><img
+          alt="link"
+          class="img-fluid"
+          src="assets/img/logo-anderson.png"
+          style="height: 55px"
+      /></a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarColor02"
+        aria-controls="navbarColor02"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarColor02">
+        <ul class="navbar-nav w-100 d-flex justify-content-center">
+          <li class="nav-item pl-2 pr-2 text-center" routerLinkActive="active">
+            <a
+              class="nav-link hvr-float-shadow"
+              (click)="click()"
+              [routerLink]="['home']"
+              ><i class="fas fa-home pr-1"></i> HOME</a
+            >
+          </li>
+
+          <li class="nav-item pl-2 pr-2 text-center" routerLinkActive="active">
+            <a
+              class="nav-link hvr-float-shadow"
+              (click)="click()"
+              [routerLink]="['skills']"
+              ><i class="fas fa-laptop-code pr-1"></i> SKILLS</a
+            >
+          </li>
+          <li class="nav-item pl-2 pr-2 text-center" routerLinkActive="active">
+            <a
+              class="nav-link hvr-float-shadow"
+              (click)="click()"
+              [routerLink]="['portafolio']"
+              ><i class="fas fa-file-invoice pr-1"></i> PORTAFOLIO</a
+            >
+          </li>
+          <li class="nav-item pl-2 pr-2 text-center">
+            <a
+              class="btn btn-primary nav-link hvr-grow-shadow"
+              (click)="click()"
+              [routerLink]="['contacto']"
+            >
+              <div class="text-white pl-1 pr-1">
+                <i class="fas fa-address-card pr-1"></i> CONTACTO
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>

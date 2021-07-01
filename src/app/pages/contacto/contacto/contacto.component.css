@@ -1,0 +1,27 @@
+.contacto .formulario{
+    border: 3px solid #006edd;
+    border-radius: 30px;
+    box-shadow: 4px 5px 12px 1px #000000;
+}   
+
+.contacto .item{
+    border: 3px solid #006edd;
+    border-radius: 30px;
+}
+
+.contacto .item:hover{
+    cursor: pointer;
+}
+
+.contacto .item a{
+    color: black;
+}
+
+.contacto .item a:hover{
+    text-decoration: none;
+}
+
+
+p{
+    margin-bottom: 0px;
+}
