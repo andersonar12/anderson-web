@@ -1,86 +1,72 @@
-<div class="contacto">
-    <div class="container-fluid pt-4">
-        <div class="row d-flex justify-content-arround">
+<div class="contacto mt-5 mb-5">
+  <div class="container-fluid pt-4">
+    <div class="row d-flex justify-content-around">
+      <div class="col-md-5 d-flex align-items-center justify-content-center">
+        <div>
+          <h2 class="text-primary text-center"><strong>CONTACT</strong></h2>
 
-            <div class="col-md-5 d-flex align-items-center justify-content-center"> 
-                <div>
-                    <h2 class="text-primary text-center"><strong>CONTACT</strong> </h2>
-
-    
-
-                    <div class="row">
-                        <div class="col item p-3 m-2 text-center hvr-grow-shadow">
-                            
-                                <h4 class="text-primary">
-                                    Location
-                                </h4>
-                                <img src="assets/img/location.png" alt="" class="" height ="60px" srcset="">    
-                                <p>Zulia, Venezuela</p>
-                            
-                        </div>
-                        <div class="col item p-3 m-2 text-center hvr-grow-shadow">
-                            <a href="https://wa.me/+584241835074?texto=Hello%20i%20am%20interested%20in%20working%20with%20you" target="_blank" >
-                                <h4 class="text-primary">
-                                        Phone Number
-                                </h4>
-                                <img src="assets/img/phone.png" alt=""  class="" height ="60px" srcset="">           
-                                <p>+58 424 1835074</p>
-                            </a>
-                            </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col item p-3 m-2 text-center hvr-grow-shadow">
-                            <a target="_blank" href="https://www.linkedin.com/in/anderson-webdev-29340523/">
-                            <h4 class="text-primary">
-                                   LinkedIn
-                            </h4>
-                              <img src="assets/img/linkedin.png" alt="" class="" height ="60px" srcset="">  
-                            <p>Anderson Romero</p>
-                        </a>
-                            </div>
-                        <div class="col item p-3 m-2 text-center hvr-grow-shadow">
-                           <a target="_blank" href="mailto:aromerocangri.14@gmail.com"> 
-                               <h4 class="text-primary">
-                                    Email
-                            </h4>
-                            <img src="assets/img/email.png" alt="" class="" height ="60px" srcset="">
-                            <p>aromerocangri.14@gmail.com</p>
-                           </a> 
-                        </div>
-                    </div>
-                    
-               </div>
+          <div class="row">
+            <div class="col item p-3 m-2 text-center hvr-grow-shadow">
+              <h4 class="text-primary">Location</h4>
+              <img src="assets/img/location.png" height="60px" />
+              <p>Zulia, Venezuela</p>
             </div>
-            
-            
-            <div class="col-md-6 formulario p-3 m-2">
-
-                <div class="row">
-                    <div class="col">
-
-                    <h3 class="text-primary text-center"><strong>Send Me! </strong> </h3>
-                        
-                    </div>
-                </div>
-                <div class="col text-center pt-5" *ngIf="spinner">
-                   
-                    <div class="spinner-border text-success" style="width: 5rem; height: 5rem;" role="status">
-                        <span class="sr-only">Loading...</span>
-                    </div>
-
-                    <h2>Cargando...</h2>
-                </div>
-                <div id="hubspotForm" class=" text-center"> </div>
-                <!-- Formulario de hubspot -->
-                <div class="row">
-                </div>
+            <div class="col item p-3 m-2 text-center hvr-grow-shadow">
+              <a href="https://wa.me/+584241835074?texto=Hello%20i%20am%20interested%20in%20working%20with%20you"
+                target="_blank">
+                <h4 class="text-primary">Phone Number</h4>
+                <img src="assets/img/phone.png" height="60px" />
+                <p>+58 424 1835074</p>
+              </a>
             </div>
-    </div> 
+          </div>
+
+          <div class="row">
+            <div class="col item p-3 m-2 text-center hvr-grow-shadow">
+              <a target="_blank" href="https://www.linkedin.com/in/anderson-webdev-29340523/">
+                <h4 class="text-primary">LinkedIn</h4>
+                <img src="assets/img/linkedin.png" height="60px" />
+                <p>Anderson Romero</p>
+              </a>
+            </div>
+            <div class="col item p-3 m-2 text-center hvr-grow-shadow">
+              <a target="_blank" href="mailto:aromerocangri.14@gmail.com">
+                <h4 class="text-primary">Email</h4>
+                <img src="assets/img/email.png" height="60px" />
+                <p>aromerocangri.14@gmail.com</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-5 formulario p-5 ">
+
+        <form [formGroup]="formGroup">
+
+          <h1 class="text-center"><strong>You can send me a message</strong>  </h1>
+
+          <mat-form-field appearance="outline" class="w-100">
+            <mat-label>Name</mat-label>
+            <input formControlName="name" matInput type="text" placeholder="Name">
+          </mat-form-field>
+
+          <mat-form-field appearance="outline" class="w-100">
+            <mat-label>Email</mat-label>
+            <input formControlName="email" matInput type="email" placeholder="Email">
+          </mat-form-field>
+
+          <mat-form-field appearance="outline" class="w-100">
+            <mat-label>Message</mat-label>
+            <textarea formControlName="message" matInput type="text" placeholder="Message"></textarea>
+          </mat-form-field>
+            
+            <button type="button" [disabled]="formGroup.invalid" class="btn btn-primary w-100" (click)="sendMail()"><strong>Send Message</strong> </button>
+
+          </form>
+      </div>
     </div>
-
-            
+  </div>
 </div>
-
 
 <app-footer></app-footer>

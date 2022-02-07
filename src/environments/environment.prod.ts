@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  apiUrlMailer: 'https://send-mail-nodejs.herokuapp.com'
 };

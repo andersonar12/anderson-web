@@ -1,28 +1,37 @@
-.footer{
-    -webkit-box-shadow: 1px -5px 13px -1px rgba(0,0,0,0.75);
--moz-box-shadow: 1px 1px 13px 1px rgba(0,0,0,0.75);
-box-shadow: 1px 1px 13px 1px rgba(0,0,0,0.75);
+.footer {
+  -webkit-box-shadow: 1px -5px 13px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 1px 13px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 1px 1px 13px 1px rgba(0, 0, 0, 0.75);
 }
 
-.footer h1 i{
-    border-radius: 35px;
+.footer h1 i {
+  border-radius: 35px;
 }
 
-.btn{
-    border-radius: 20px;
+.btn {
+  border-radius: 20px;
 }
 
 .btn-outline-primary {
-    color: #ffffff;
-    border-color: #ffffff;
+  color: #ffffff;
+  border-color: #ffffff;
 }
 
 .btn-outline-primary:hover {
-    color: #006fdd;;
-    background-color: #ffffff;;
-    border-color:  #006fdd;;
+  color: #006fdd;
+  background-color: #ffffff;
+  border-color: #006fdd;
 }
 
-.made-with{
-    background-color: #0054a4!important;
+.made-with {
+  background-color: #0054a4 !important;
+}
+
+.firebase {
+  cursor: pointer;
+}
+
+::ng-deep .mat-tooltip {
+  font-size: 14px;
+  font-weight: bold;
 }

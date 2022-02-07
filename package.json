@@ -1,6 +1,10 @@
 {
   "name": "anderson-web",
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "author": {
+    "name": "Anderson Romero",
+    "email": "aromerocangri.14@gmail.com"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -24,9 +28,9 @@
     "firebase-tools": "^8.10.0",
     "font-awesome": "^4.7.0",
     "hover.css": "^2.3.2",
-    "ngx-lightbox": "^2.0.0",
     "rxjs": "~6.5.5",
     "spin.js": "^4.1.0",
+    "sweetalert2": "^11.4.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.3"
   },

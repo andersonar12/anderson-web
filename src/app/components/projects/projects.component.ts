@@ -1,7 +1,7 @@
 import { Component, Input, OnDestroy, OnInit } from '@angular/core';
 import { interval, Subscription } from 'rxjs';
+import Swal from 'sweetalert2';
 
-declare var Swal: any;
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
@@ -14,40 +14,34 @@ export class ProjectsComponent implements OnInit, OnDestroy {
 
   selectIndex: number = 0
 
-  constructor() {}
-  
+  constructor() { }
+
   ngOnInit() {
     this.tabsAutoPlay()
+  }
 
+  imagePreview(imagenUrl: string) {
+    Swal.fire({ imageUrl: imagenUrl, width: 'auto' });
   }
-  
-  imagePreview(imagen: string) {
-    Swal.fire({
-      imageUrl: imagen,
-      width: 'auto',
-    });
-  }
-  
-  selected(event){
+
+  selected(event) {
     /* console.log(event); */
   }
-  
-  tabsAutoPlay(){
-    this.intervalSub = interval(3000).subscribe(()=>{
 
-    if (this.images.length - 1 == this.selectIndex) {
-      this.selectIndex = 0
-      return
-    }
+  tabsAutoPlay() {
+    this.intervalSub = interval(3000).subscribe(() => {
 
-    this.selectIndex++
-  
-  })
+      if (this.images.length - 1 == this.selectIndex) {
+        this.selectIndex = 0
+        return
+      }
 
+      this.selectIndex++
+    })
   }
 
   ngOnDestroy(): void {
     this.intervalSub.unsubscribe()
-   /*  console.log('Interval Cleaned'); */
+    /*  console.log('Interval Cleaned'); */
   }
 }
