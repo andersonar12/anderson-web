@@ -1,4 +1,5 @@
 # AndersonWeb
+//TODO: Recordar que este sitio web ya posee deploy automatico hacia Firebase, se debe modificar lo que segun corresponda, luego hacer el build (ng build --prod --output-hashing=all) y posterior hacer el push de los cambios
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.6.
 

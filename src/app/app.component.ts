@@ -1,21 +1,33 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { fader} from 'src/app/route-animations';
+import { NavigationEnd, Router, RouterOutlet } from '@angular/router';
+import { filter } from 'rxjs/operators';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  animations: [ // <-- add your animations here
-    
-    fader
-  ]
+
 })
 export class AppComponent {
 
-  prepareRoute(outlet: RouterOutlet) {
-    return outlet && outlet.activatedRouteData && outlet.activatedRouteData['animation'];
+  // prepareRoute(outlet: RouterOutlet) {
+  //   return outlet && outlet.activatedRouteData;
+  // }
+
+  constructor(private router: Router) {
+    this.router.events.pipe(
+      filter(event => event instanceof NavigationEnd)
+    ).subscribe(() => {
+      this.scrollToTop();
+    });
   }
 
-  
+  scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      // behavior: 'smooth'
+    });
+  }
+
 }

@@ -4,6 +4,10 @@
     box-shadow: 4px 5px 12px 1px #000000;
 }
 
+.card-col{
+  min-width: 220px;
+}
+
 .card:hover{
     cursor: pointer;
 }
@@ -14,7 +18,7 @@
 
 
 @media screen and (min-width: 601px) and (max-width: 1000px) {
-    
+
 
     .card h3{
         font-size: 35px!important;

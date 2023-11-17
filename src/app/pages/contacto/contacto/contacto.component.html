@@ -1,4 +1,4 @@
-<div class="contacto mt-5 mb-5">
+<div class="contacto mt-5 mb-5 animate__animated animate__fadeInUpBig animate__faster">
   <div class="container-fluid pt-4">
     <div class="row d-flex justify-content-around">
       <div class="col-md-5 d-flex align-items-center justify-content-center">
@@ -60,13 +60,13 @@
             <mat-label>Message</mat-label>
             <textarea formControlName="message" matInput type="text" placeholder="Message"></textarea>
           </mat-form-field>
-            
+
             <button type="button" [disabled]="formGroup.invalid" class="btn btn-primary w-100" (click)="sendMail()"><strong>Send Message</strong> </button>
 
           </form>
       </div>
     </div>
   </div>
+  <app-footer></app-footer>
 </div>
 
-<app-footer></app-footer>
