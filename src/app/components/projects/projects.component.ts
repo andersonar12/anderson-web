@@ -21,7 +21,7 @@ export class ProjectsComponent implements OnInit, OnDestroy {
   }
 
   imagePreview(imagenUrl: string) {
-    Swal.fire({ imageUrl: imagenUrl, width: 'auto' });
+    Swal.fire({ imageUrl: imagenUrl, width: 'auto', customClass: { container: 'max-height' } });
   }
 
   selected(event) {

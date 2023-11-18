@@ -1,12 +1,18 @@
 .card{
     border: 3px solid rgb(0 110 221);
-    border-radius: 0.75rem;
+    border-radius: 2rem;
     box-shadow: 4px 5px 12px 1px #000000;
 }
 
 .card-col{
   min-width: 220px;
+
 }
+
+.hvr-shutter-in-vertical:before {
+    border-radius: 2rem;
+}
+
 
 .card:hover{
     cursor: pointer;

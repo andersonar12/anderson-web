@@ -7,18 +7,28 @@ export class SkillsService {
   public skills: Skill[] = [
     {
       title: 'Angular',
-      img: 'assets/img/skills/angular.png',
+      img: 'assets/img/skills/angular-new-logo.gif',
       porc: 90
-    },
-    {
-      title: 'Ionic',
-      img: 'assets/img/skills/ionic.png',
-      porc: 80
     },
     {
       title: 'Vue.js',
       img: 'assets/img/skills/vue.png',
       porc: 75
+    },
+    {
+      title: 'React',
+      img: 'assets/img/skills/react-logo.png',
+      porc: 60
+    },
+    {
+      title: 'Next.js',
+      img: 'assets/img/skills/next-js-logo.png',
+      porc: 80
+    },
+    {
+      title: 'Ionic',
+      img: 'assets/img/skills/ionic.png',
+      porc: 80
     },
     {
       title: 'Typescript',
@@ -41,11 +51,6 @@ export class SkillsService {
       porc: 95,
     },
     {
-      title: 'WordPress',
-      img: 'assets/img/skills/wordpress.png',
-      porc: 55,
-    },
-    {
       title: 'PHP',
       img: 'assets/img/skills/php.png',
       porc: 65,
@@ -60,11 +65,6 @@ export class SkillsService {
       img: 'assets/img/skills/css.png',
       porc: 75,
     },
-    // {
-    //   title: "API's",
-    //   img: 'assets/img/skills/api.png',
-    //   porc: 90,
-    // },
     {
       title: 'Jquery',
       img: 'assets/img/skills/jquery.png',
@@ -79,11 +79,6 @@ export class SkillsService {
       title: 'GIT',
       img: 'assets/img/skills/github.png',
       porc: 75,
-    },
-    {
-      title: 'Flutter',
-      img: 'assets/img/skills/flutter.png',
-      porc: 35,
     }
   ];
 

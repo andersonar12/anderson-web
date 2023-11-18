@@ -6,11 +6,11 @@ import { PortafolioComponent } from './pages/portafolio/portafolio/portafolio.co
 import { SkillsComponent } from './pages/skills/skills/skills.component';
 
 const routes: Routes = [
-  {path:'home', component: HomeComponent,data:{animation : 'isLeft'}},
-  {path:'skills', component: SkillsComponent,data:{animation : 'enter'} },
-  {path:'portafolio', component: PortafolioComponent,data:{animation : 'trigger'} },
-  {path:'contacto', component: ContactoComponent,data:{animation : 'isRight'}},
-  {path:'**', pathMatch: 'full', redirectTo:'home', data:{animation : 'enter'}}
+  {path:'home', component: HomeComponent},
+  {path:'skills', component: SkillsComponent },
+  {path:'portafolio', component: PortafolioComponent },
+  {path:'contacto', component: ContactoComponent},
+  {path:'**', pathMatch: 'full', redirectTo:'home'}
 ];
 
 @NgModule({

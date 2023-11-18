@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { NavigationEnd, Router, RouterOutlet } from '@angular/router';
 import { filter } from 'rxjs/operators';
 
@@ -8,20 +8,22 @@ import { filter } from 'rxjs/operators';
   styleUrls: ['./app.component.css'],
 
 })
-export class AppComponent {
+export class AppComponent implements AfterViewInit {
 
   // prepareRoute(outlet: RouterOutlet) {
   //   return outlet && outlet.activatedRouteData;
   // }
 
-  constructor(private router: Router) {
-    this.router.events.pipe(
-      filter(event => event instanceof NavigationEnd)
-    ).subscribe(() => {
-      this.scrollToTop();
-    });
-  }
 
+  constructor(private router: Router) { }
+
+  ngAfterViewInit() {
+      this.router.events.pipe(
+        filter(event => event instanceof NavigationEnd)
+      ).subscribe(() => {
+        this.scrollToTop();
+      });
+  }
   scrollToTop() {
     window.scrollTo({
       top: 0,

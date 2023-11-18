@@ -29,7 +29,8 @@
               "./node_modules/hover.css/css/hover.css",
               "./node_modules/font-awesome/css/font-awesome.css"
             ],
-            "scripts": []
+            "scripts": [
+            ]
           },
           "configurations": {
             "production": {
